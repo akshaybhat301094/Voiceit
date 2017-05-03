@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Voice Recognizer</title>
-	      
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   
+
   </head>
   <body align="center" onload='responsiveVoice.speak("Welcome to American Airlines");'>
 
@@ -42,8 +42,8 @@
 
 
       <img src="images/logo.png" alt="logo">
-    <h2>WELCOME</h2>
-    
+    <h2>Welcome! </h2>
+
     <form class="ab form-group">
       <label for="pnr">Voice your PNR:</label>
       <input class="form-control text-center" type="text" id="user" placeholder="Your Speech Output"/>
@@ -91,6 +91,7 @@
             if (uservoice[0]==obj.pnr) {
               $("#aa").text("");
               $('#arr').text("Your flight's expected arrival time is "+obj.arrival+". For further queries contact Help Desk");
+              $("#play").remove();
               $("body").append("<input onclick='responsiveVoice.speak($(\"#arr\").text());' id='play' type='button' value='🔊 Play' />");
               uservoice.pop();//removed the pnr after displaying the details
               $("#help").text("");
