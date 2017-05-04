@@ -37,7 +37,7 @@
 
     <main id="main">
       <img src="images/logo.png" alt="logo">
-      <h2>Welcome! </h2>
+      <h2>Welcome </h2>
 
       <form class="ab form-group">
         <label for="pnr">Voice your PNR:</label>
@@ -85,9 +85,9 @@
           var rest = $("#pnr").val();
           var user =$("#user").val();
           //below are some validations that work only when the user spoken pnr is equal to the pnr in the json file
-          if(rest==obj.pnr){
+          if(rest==obj[1].pnr){
             $("#arr").text("");//this line is used to clear the message when it is not required.
-            $("#aa").text(obj.hello);
+            $("#aa").text(obj[1].hello);
             $('#abc').text("");
             $('#abc').text("Flight Status");
             alert(obj);
