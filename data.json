@@ -1,4 +1,4 @@
-{
+[{
       "pnr":12345,
       "hello": "Flight is delayed Sorry for the inconvinence caused",
       "arrival": "21:30"
@@ -7,4 +7,4 @@
       "pnr":123,
       "hello": "Flight is On time. Have a safe journey!",
       "arrival": "05:30"
- }
+ }]
