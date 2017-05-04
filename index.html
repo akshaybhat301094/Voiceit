@@ -9,7 +9,7 @@
     <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -20,7 +20,7 @@
     <!-- The section below is a navbar using bootstrap -->
 
     <nav id="navbar">
-      <h2>Menu</h2>
+      <h2 >DashBoard</h2>
       <ul>
         <li><a href="#">Flight Status</a></li>
         <li><a href="#">Contact</a></li>
@@ -62,6 +62,7 @@
       $("#main").click(function(){
           $("#navbar").removeClass("open");
       });
+
       var uservoice=[];//an array to store user commands globally so that we can use them later
       //the below if commang checks whether the current browser suports annyang or not
       if(annyang){
