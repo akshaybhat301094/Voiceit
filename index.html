@@ -84,6 +84,8 @@
           var obj = JSON.parse(res);
           var rest = $("#pnr").val();
           var user =$("#user").val();
+          alert(obj);
+          alert(obj.length);
           //below are some validations that work only when the user spoken pnr is equal to the pnr in the json file
           for(i=0;i<=obj.length;i++){
           if(rest==obj[i].pnr){
