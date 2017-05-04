@@ -70,7 +70,6 @@ body{
         transform: translate(-250px, 0);
         transition: transform 0.3s ease;
         z-index:1;
-        border: 2px solid;
         opacity: 0.9;
       }
       #navbar.open {
@@ -103,7 +102,6 @@ body{
       nav ul li{
         width: 100%;
         padding:10%;
-        border:1px solid;
       }
       nav ul li:hover{
         background-color: black;
@@ -111,12 +109,12 @@ body{
       nav ul li a {
         font-size: 25px;
         color: white;
-        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
       }
       nav h2{
         margin-bottom: 0;
         color:black;
-        background-color: white;
+        background-color: #0275d8;
       }
 
   body{
