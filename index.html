@@ -37,7 +37,7 @@
 
     <main id="main">
       <img src="images/logo.png" alt="logo">
-      <h2>Welcome </h2>
+      <h2>Welcome! </h2>
 
       <form class="ab form-group">
         <label for="pnr">Voice your PNR:</label>
@@ -48,7 +48,7 @@
         <!-- annyang will only listen when the below button is pressed -->
         <button class="button" type="button" onclick="annyang.start({ autoRestart: false, continuous: false })" name="button">Tap to Speak</button>
       </form>
-      <h2 class="abc">Find the status of Your flight</h2>
+      <h2 class="abc"></h2>
       <h2 id="aa"></h2>
       <h3 id="arr"></h3>
     </main>
@@ -88,6 +88,8 @@
           if(rest==obj.pnr){
             $("#arr").text("");//this line is used to clear the message when it is not required.
             $("#aa").text(obj.hello);
+            $('#abc').text("");
+            $('#abc').text("Flight Status");
             uservoice.push(rest);//stored the pnr in the array so that it can be accessed globally
             $("#help").text("Tap the button and Say *SHOW* to display more details")
           }
@@ -95,10 +97,13 @@
             if (uservoice[0]==obj.pnr) {
               $("#aa").text("");
               $('#arr').text("Your flight's expected arrival time is "+obj.arrival+". For further queries contact Help Desk");
+               $('#abc').text("");
+              $('#abc').text("Flight Status");
               $("#play").remove();
               $("body").append("<input onclick='responsiveVoice.speak($(\"#arr\").text());' id='play' type='button' value='🔊 Play' />");
               uservoice.pop();//removed the pnr after displaying the details
               $("#help").text("");
+              
             }
             else {
               $("#aa").text("");
