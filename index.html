@@ -91,7 +91,7 @@
             uservoice.push(rest);//stored the pnr in the array so that it can be accessed globally
             $("#help").text("Tap the button and Say *SHOW* to display more details")
           }
-          else if (user=="show") {//works only when user says show and both the pnr are matching
+          else if (user=="show" || user=="flight status" || user=="check flight status" || user=="status" || user=="check") {//works only when user says show and both the pnr are matching
             if (uservoice[0]==obj.pnr) {
               $("#aa").text("");
               $('#arr').text("Your flight's expected arrival time is "+obj.arrival+". For further queries contact Help Desk");
