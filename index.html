@@ -85,13 +85,12 @@
           var rest = $("#pnr").val();
           var user =$("#user").val();
           //below are some validations that work only when the user spoken pnr is equal to the pnr in the json file
-          if(rest==obj[1].pnr){
+          if(rest==obj.pnr){
             $("#arr").text("");//this line is used to clear the message when it is not required.
-            $("#aa").text(obj[1].hello);
+            $("#aa").text(obj.hello);
             $('#abc').text("");
-            $('#abc').text("Flight Status");
             alert(obj);
-            alert(obj.length);
+            $('#abc').text("Flight Status");
             uservoice.push(rest);//stored the pnr in the array so that it can be accessed globally
             $("#help").text("Tap the button and Say *SHOW* to display more details")
           }
