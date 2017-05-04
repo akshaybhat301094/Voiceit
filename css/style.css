@@ -113,8 +113,10 @@ body{
       }
       nav h2{
         margin-bottom: 0;
+        margin-top: 5px;
         color:black;
         background-color: #0275d8;
+        font-family: 'Athiti', sans-serif;
       }
 
   body{
