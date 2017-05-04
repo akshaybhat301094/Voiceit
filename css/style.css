@@ -63,14 +63,15 @@ body{
     height:100%;
   }
       #navbar{
-        width:300px;
+        width:250px;
         height:100%;
         position:absolute;
-        background:#eceeef;
-        transform: translate(-300px, 0);
+        background:#0275d8;
+        transform: translate(-250px, 0);
         transition: transform 0.3s ease;
         z-index:1;
-        border: 3px solid;
+        border: 2px solid;
+        opacity: 0.9;
       }
       #navbar.open {
         -webkit-transform: translate(0, 0);
@@ -79,12 +80,42 @@ body{
       .navcont{
         width:100%;
         background-color:#0275d8;
+        display: flex;
       }
       #button{
         display:inline-block;
-        width: 10%;
-        height:35px;
+        width: 12%;
+        height:40px;
+        background-color: #0275d8;
         border: 1px solid;
+        padding:0;
+      }
+      .line{
+        width:80%;
+        height:4px;
+        background-color: #444;
+        margin:4px 10% 4px 10%;
+      }
+      nav ul{
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li{
+        width: 100%;
+        padding:10%;
+        border:1px solid;
+      }
+      nav ul li:hover{
+        background-color: black;
+      }
+      nav ul li a {
+        font-size: 25px;
+        color: white;
+        font-weight: bold;
+      }
+      nav h2{
+        margin-bottom: 10px;
+        color:black;
       }
 
   body{
